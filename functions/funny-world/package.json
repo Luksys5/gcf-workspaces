@@ -1,22 +1,27 @@
 {
-  "name": "@lukastech/funny-world",
-  "version": "1.0.0",
-  "main": "dist",
-  "scripts": {
-    "start": "env-cmd functions-framework --target=funnyWorld --source=dist --signature-type=http",
-    "dev": "yarn generate-entrypoint && concurrently -c bgBlue,bgWhite yarn:*-watch",
-    "build": "tsc",
-    "generate-entrypoint": "ts-node ../../cli generate-entrypoint funny-world",
-    "deploy": "ts-node ../../cli deploy funny-world",
-    "build-watch": "tsc -w",
-    "start-watch": "nodemon --watch ./dist --exec yarn start"
-  },
-  "dependencies": {
-    "@google-cloud/functions-framework": "^2.1.0",
-    "cowsay": "^1.5.0",
-    "env-cmd": "^10.1.0",
-    "escape-html": "^1.0.3",
-    "module-alias": "^2.2.2",
-    "typescript": "^5.4.5"
-  }
+    "name": "@lukastech/funny-world",
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "./dist"
+    ],
+    "engines": {
+        "node": "20.11.0"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@google-cloud/functions-framework": "^2.1.0",
+        "cowsay": "^1.5.0",
+        "env-cmd": "^10.1.0",
+        "escape-html": "^1.0.3",
+        "module-alias": "^2.2.2",
+        "typescript": "^5.4.5"
+    },
+    "devDependencies": {
+        "@types/escape-html": "^1.0.4",
+        "@types/express": "^4.17.21"
+    }
 }

@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "dist",
     "paths": {
-      "@lukastech/greetings": ["packages/greetings"]
+      "@lukastech/greetings": ["packages/greetings"],
+      "@lukastech/config": ["packages/config"]
     }
   },
   "include": ["./**/*.ts"]

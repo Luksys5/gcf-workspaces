@@ -1,7 +1,7 @@
 {
   "name": "gcf-workspaces",
-  "version": "0.1.0",
-  "author": "luktut@boozt.com",
+  "version": "1.0.0",
+  "author": "luksys5@yahoo.com",
   "workspaces": [
     "packages/*",
     "functions/*"

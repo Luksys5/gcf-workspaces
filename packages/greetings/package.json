@@ -1,5 +1,8 @@
 {
-  "name": "@lukastech/greetings",
-  "version": "1.0.0",
-  "main": "src/index.ts"
+    "name": "@lukastech/greetings",
+    "version": "1.0.0",
+    "main": "./src/index.ts",
+    "engines": {
+        "node": "20.11.0"
+    }
 }
