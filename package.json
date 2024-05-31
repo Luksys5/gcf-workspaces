@@ -1,0 +1,20 @@
+{
+  "name": "gcf-workspaces",
+  "version": "0.1.0",
+  "author": "luktut@boozt.com",
+  "workspaces": [
+    "packages/*",
+    "functions/*"
+  ],
+  "scripts": {
+    "build-deploy": "ts-node buildAndDeploy"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^5.4.5",
+    "yaml": "^1.10.2"
+  }
+}

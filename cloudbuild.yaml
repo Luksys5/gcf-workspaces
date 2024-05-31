@@ -1,0 +1,8 @@
+steps:
+  # Install Yarn
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['install']
+
+  # Build and deploy the Cloud Function
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['functions', 'deploy', 'funny-world', '--runtime', 'nodejs20', '--trigger-http', '--entry-point=funnyWorld']
